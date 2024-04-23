@@ -146,7 +146,7 @@ Group A: Non-pointer values
 	array
 	struct
 
-	These are pass-by-value
+	These are pass-by-value (copied)
 
 	Pointers themselves are probably in this group
 
