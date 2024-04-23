@@ -182,27 +182,6 @@ Function that accepts a pointer:
 (This explicit pointer syntax is implicit for pointer-wrapper types.)
 
 
-Structs
--------
-
-Declaration of type:
-
-	type structName struct {
-		name1 type1
-		name2 type2
-		...
-	}
-
-Create instance:
-
-	myStruct := StructType{
-		name1: "foo",
-		name2: "bar",
-		...
-	}
-
-
-
 
 
 

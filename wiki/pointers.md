@@ -87,8 +87,5 @@ passing structs into functions
 
 	// The latter two must be called like this:
 
-
 	editStruct(&myFoo)
-
-
 ```
