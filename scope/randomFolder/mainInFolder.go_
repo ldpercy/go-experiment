@@ -1,0 +1,19 @@
+/*
+Attempt to have a 'main' package file in a different directory.
+This doesn't seem to work.
+Looks like Go wants all package files in the same directory.
+*/
+
+package main
+
+import "fmt"
+
+
+var mainInFolder = "mainInFolder hello"
+
+fmt.PrintLn(mainInFolder)
+
+func funcInFolder() {
+	fmt.PrintLn("funcInFolder")
+}
+
