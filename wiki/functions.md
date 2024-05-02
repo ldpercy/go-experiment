@@ -2,7 +2,7 @@ Functions
 =========
 
 
-
+https://go.dev/doc/codewalk/functions/
 
 
 Anonymous functions
@@ -17,7 +17,8 @@ https://en.wikipedia.org/wiki/Anonymous_function#Go
 	fmt.Println(foo(10))
 
 
-https://www.koderhq.com/tutorial/go/function/#lambda
+
+
 
 
 	// defined
@@ -31,3 +32,17 @@ https://www.koderhq.com/tutorial/go/function/#lambda
 
 		// body
 	} (arguments)
+
+Function Literals
+-----------------
+
+https://go.dev/ref/spec#Function_literals
+
+
+
+
+Lambdas
+-------
+https://www.gyata.ai/golang/golang-lambda/
+https://www.koderhq.com/tutorial/go/function/#lambda
+
