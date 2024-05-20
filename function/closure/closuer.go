@@ -1,16 +1,13 @@
 /*
-Lambda
-======
+Closure
 */
 
-package lambda
+package closure
 
 import "fmt"
 
 func test() {
-
 	fmt.Println("lambda main")
-
 }
 
 func example() {

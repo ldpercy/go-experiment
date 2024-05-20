@@ -1,0 +1,5 @@
+/*
+Function types
+*/
+
+package types
