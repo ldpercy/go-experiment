@@ -1,18 +1,21 @@
 package main
 
 import (
-	anon "experiment/function/anonymous"
+	_ "experiment/function/anonymous"
+	"experiment/function/multireturn"
 	"fmt"
 )
 
 func main() {
 
-	fmt.Println(anon.Foo())
-	fmt.Println(anon.Bar())
+	/*
+		// Anonymous functions
 
-	rf := anon.RetFunc()
-	fmt.Println(rf())
-
+		fmt.Println(anon.Foo())
+		fmt.Println(anon.Bar())
+		rf := anon.RetFunc()
+		fmt.Println(rf())
+	*/
 	/*
 		doesn't look like you can loop over an import
 
@@ -21,4 +24,12 @@ func main() {
 		}
 	*/
 
+	// Multiple Return
+	fmt.Println(multireturn.ReturnOne(5))
+	//fmt.Println(multireturn.ReturnOneBracketed(6))
+	fmt.Println(multireturn.ReturnTwo(7))
+	fmt.Println(multireturn.ReturnThree(8))
+
+	a, b := multireturn.ReturnTwoFuncs()
+	fmt.Println(a(11), b(12))
 }

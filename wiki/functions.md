@@ -46,3 +46,19 @@ Lambdas
 https://www.gyata.ai/golang/golang-lambda/
 https://www.koderhq.com/tutorial/go/function/#lambda
 
+
+
+
+Multiple return
+---------------
+
+https://golangdocs.com/multiple-return-values-in-golang-functions
+
+
+	func vals() (int, int) {
+		return 3, 7
+	}
+
+	a, b := vals()
+
+
