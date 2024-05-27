@@ -3,6 +3,21 @@
 
 package multireturn
 
+import (
+	"fmt"
+)
+
+func Test() {
+	// Multiple Return
+	fmt.Println(ReturnOne(5))
+	//fmt.Println(multireturn.ReturnOneBracketed(6))
+	fmt.Println(ReturnTwo(7))
+	fmt.Println(ReturnThree(8))
+
+	a, b := ReturnTwoFuncs()
+	fmt.Println(a(11), b(12))
+}
+
 func ReturnOne(n int) int {
 	return n * 2
 }

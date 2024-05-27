@@ -18,9 +18,6 @@ https://en.wikipedia.org/wiki/Anonymous_function#Go
 
 
 
-
-
-
 	// defined
 	func(parameters) {
 
@@ -32,6 +29,7 @@ https://en.wikipedia.org/wiki/Anonymous_function#Go
 
 		// body
 	} (arguments)
+
 
 Function Literals
 -----------------
@@ -61,4 +59,9 @@ https://golangdocs.com/multiple-return-values-in-golang-functions
 
 	a, b := vals()
 
+
+Function typing
+---------------
+
+https://go.dev/ref/spec#Function_types
 
