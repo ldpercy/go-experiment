@@ -6,8 +6,8 @@ package closure
 
 import "fmt"
 
-func test() {
-	fmt.Println("lambda main")
+func Test() {
+	fmt.Println("Closures")
 }
 
 func example() {

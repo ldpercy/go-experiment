@@ -12,6 +12,7 @@ import (
 )
 
 func Test() {
+	fmt.Println("Function Types")
 	fmt.Println(english("ANisus"))
 	fmt.Println(english.exclamation("ANisus"))
 }

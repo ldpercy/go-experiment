@@ -9,25 +9,23 @@ import (
 )
 
 func Test() {
+	fmt.Println("Anonymous Functions")
 
-	// Anonymous functions
-
-	fmt.Println(Foo())
-	fmt.Println(Bar())
-	rf := RetFunc()
+	fmt.Println(foo())
+	fmt.Println(bar())
+	rf := retFunc()
 	fmt.Println(rf())
 }
 
-var Foo = func() string {
+var foo = func() string {
 	return "foo"
 }
 
-var Bar = func() string {
+var bar = func() string {
 	return "bar"
 }
 
-var RetFunc = func() func() string {
-
+var retFunc = func() func() string {
 	result := func() string { return "blah" }
 	return result
 }
