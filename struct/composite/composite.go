@@ -5,6 +5,8 @@ package composite
 
 import (
 	"fmt"
+	// "experiment/struct/main" // cannot do this - cyclic dependency
+	typeUtil "experiment/type/util"
 )
 
 type identity struct {
@@ -28,7 +30,11 @@ func Test() {
 	fmt.Println("Composite Structs")
 	fmt.Println(makePerson())
 	fmt.Println(makeAnotherPerson())
-	fmt.Println(makeMegaPerson())
+	mp := makeMegaPerson()
+	fmt.Println(mp)
+	typeUtil.PrintType(mp)
+
+	//typeUtil.PrintType(mp2)
 }
 
 func makePerson() person {
@@ -44,7 +50,8 @@ func makeAnotherPerson() person {
 	return thisPerson
 }
 
-type megaPerson person // not sure what I've created here - I don't think it's a type alias
+type megaPerson person    // not sure what I've created here - I don't think it's a type alias
+type megaPerson2 = person // *this* is a type alias
 
 func makeMegaPerson() megaPerson {
 	mp := megaPerson{}
