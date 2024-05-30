@@ -59,6 +59,7 @@ type personAlias = person // *this* is a type alias
 /*
 not sure what I've created here - I don't think it's a type alias
 It seems to be brand new type, that just happens to be duplicate of person
+Looks to be a new 'named type' see experiment/type/alias for more info.
 */
 type megaPerson person
 
