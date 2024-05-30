@@ -30,11 +30,13 @@ func Test() {
 	fmt.Println("Composite Structs")
 	fmt.Println(makePerson())
 	fmt.Println(makeAnotherPerson())
+
+	pa := personAlias{}
+	typeUtil.PrintType(pa)
+
 	mp := makeMegaPerson()
 	fmt.Println(mp)
 	typeUtil.PrintType(mp)
-
-	//typeUtil.PrintType(mp2)
 }
 
 func makePerson() person {
@@ -50,8 +52,15 @@ func makeAnotherPerson() person {
 	return thisPerson
 }
 
-type megaPerson person    // not sure what I've created here - I don't think it's a type alias
-type megaPerson2 = person // *this* is a type alias
+// Alisaing
+
+type personAlias = person // *this* is a type alias
+
+/*
+not sure what I've created here - I don't think it's a type alias
+It seems to be brand new type, that just happens to be duplicate of person
+*/
+type megaPerson person
 
 func makeMegaPerson() megaPerson {
 	mp := megaPerson{}

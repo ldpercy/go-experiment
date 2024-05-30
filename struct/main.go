@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Structs")
+	fmt.Println("Experiment: Structs")
 	simple.Test()
 	composite.Test()
 }

@@ -13,8 +13,8 @@ func Test() {
 }
 
 // https://stackoverflow.com/questions/20170275/how-to-find-the-type-of-an-object-in-go
-func TypeOf(v interface{}) string {
-	return reflect.TypeOf(v).String()
+func TypeOf(i interface{}) any {
+	return reflect.TypeOf(i)
 }
 
 func PrintType(a any) {
