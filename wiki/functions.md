@@ -65,3 +65,7 @@ Function typing
 
 https://go.dev/ref/spec#Function_types
 
+https://go.dev/ref/spec#Type_identity
+
+
+> * Two function types are identical if they have the same number of parameters and result values, corresponding parameter and result types are identical, and either both functions are variadic or neither is. Parameter and result names are not required to match.

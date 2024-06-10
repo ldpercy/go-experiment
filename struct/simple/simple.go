@@ -22,3 +22,11 @@ func makeStruct() simpleStruct {
 	}
 	return myStruct
 }
+
+// Empty struct??
+type emptyStruct struct{}
+
+func testEmptyStruct() emptyStruct {
+	es := emptyStruct{}
+	return es
+}

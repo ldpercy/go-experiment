@@ -6,6 +6,18 @@ https://go.dev/ref/spec#Types
 https://go.dev/ref/spec#Properties_of_types_and_values
 
 
+Basic Format
+------------
+
+```go
+	type newTypeName existingTypeConstructor
+```
+
+This creates a brand new, independent, type based on the existing type.
+
+
+
+
 
 
 Aliasing
