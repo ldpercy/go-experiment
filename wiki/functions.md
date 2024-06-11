@@ -65,7 +65,15 @@ Function typing
 
 https://go.dev/ref/spec#Function_types
 
+
+Declare a typename for a function signature:
+
+	type typeName func(args...) returnType
+
+
+
 https://go.dev/ref/spec#Type_identity
 
-
 > * Two function types are identical if they have the same number of parameters and result values, corresponding parameter and result types are identical, and either both functions are variadic or neither is. Parameter and result names are not required to match.
+
+I'm not sure I think this is a *good thing*, in particular the param/result name bit, but that's how it is.
