@@ -1,20 +1,10 @@
 // should probably consolidate this into a general os/filesystem experiment along with file
 
-package main
+package directory
 
-import (
-	"experiment/directory/read"
-	"experiment/directory/walk"
-)
-
-func main() {
-
-	directory := "."
-
-	read.Test(directory)
-
-	walk.Test(directory)
-
+func Test(directory string) {
+	TestRead(directory)
+	TestWalk(directory)
 }
 
 /*

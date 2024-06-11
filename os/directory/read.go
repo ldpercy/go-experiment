@@ -1,14 +1,14 @@
-package read
+package directory
 
 import (
-	"experiment/directory/util"
+	"experiment/os/util"
 	"fmt"
 	"io/fs"
 	"log"
 	"os"
 )
 
-func Test(directory string) {
+func TestRead(directory string) {
 
 	// readDir
 	fmt.Println("osReadDir")

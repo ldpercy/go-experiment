@@ -1,4 +1,4 @@
-package walk
+package directory
 
 import (
 	"fmt"
@@ -21,7 +21,7 @@ https://pkg.go.dev/path/filepath#WalkDir
 There might be a typo in the signature for filepath.WalkDir - the second argument should be fs.DirEntry I think.
 */
 
-func Test(directory string) {
+func TestWalk(directory string) {
 	// walkDir
 	fmt.Println("walkDir")
 	getFiles(directory)

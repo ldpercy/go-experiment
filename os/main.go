@@ -1,11 +1,14 @@
 package main
 
 import (
+	"experiment/os/directory"
 	"experiment/os/file"
 )
 
 func main() {
 
-	file.Test()
+	dir := "."
 
+	file.Test()
+	directory.Test(dir)
 }
