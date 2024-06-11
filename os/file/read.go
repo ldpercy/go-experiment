@@ -1,4 +1,4 @@
-package main
+package file
 
 import (
 	"fmt"
@@ -6,9 +6,9 @@ import (
 	"reflect"
 )
 
-func main() {
+func Test() {
 
-	filename := "test.txt"
+	filename := "./file/test.txt"
 
 	//open file
 	file, err := os.Open(filename)
