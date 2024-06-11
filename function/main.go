@@ -3,7 +3,7 @@ package main
 import (
 	_ "experiment/function/anonymous"
 	_ "experiment/function/multireturn"
-	"experiment/function/types"
+	"experiment/function/typing"
 )
 
 func main() {
@@ -17,5 +17,5 @@ func main() {
 	*/
 	// anonymous.Test()
 	// multireturn.Test()
-	types.Test()
+	typing.Test()
 }

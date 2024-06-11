@@ -1,5 +1,5 @@
 /*
-Function types
+Function typing
 
 https://go.dev/ref/spec#Function_types
 
@@ -9,16 +9,16 @@ https://stackoverflow.com/questions/9398739/working-with-function-types-in-go
 
 	his example is weird, trying a simpler version
 */
-package types
+package typing
 
 import (
 	"fmt"
 )
 
 func Test() {
-	fmt.Println("Function Types")
+	fmt.Println("Function Typing")
 
-	fmt.Println(helloEnglish("Function Types"))
+	fmt.Println(helloEnglish("Function Typing"))
 
 	var he Hello = helloEnglish // declare that helloEnglish is of type Hello
 	fmt.Println(he("ldpercy"))
