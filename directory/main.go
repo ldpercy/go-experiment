@@ -1,26 +1,19 @@
+// should probably consolidate this into a general os/filesystem experiment along with file
+
 package main
 
 import (
-	"fmt"
-	"io/fs"
+	"experiment/directory/read"
+	"experiment/directory/walk"
 )
 
 func main() {
 
 	directory := "."
 
-	// readDir
-	//fmt.Println("osReadDir")
-	//printFiles(osReadDir(directory))
+	read.Test(directory)
 
-	//fmt.Println("fsReadDir")
-	//printFiles(fsReadDir(directory))
-
-	// walkDir
-	fmt.Println("walkDir")
-	getFiles(directory)
-	//result := getFiles(directory)
-	//printFiles(result)
+	walk.Test(directory)
 
 }
 
@@ -30,9 +23,3 @@ https://pkg.go.dev/io/ioutil#ReadDir		deprecated!!
 https://pkg.go.dev/os#ReadDir
 
 */
-
-func printFiles(files []fs.DirEntry) {
-	for _, file := range files {
-		fmt.Printf("%#v \n", file)
-	}
-}

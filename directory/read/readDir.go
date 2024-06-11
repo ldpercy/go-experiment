@@ -1,10 +1,23 @@
-package main
+package read
 
 import (
+	"experiment/directory/util"
+	"fmt"
 	"io/fs"
 	"log"
 	"os"
 )
+
+func Test(directory string) {
+
+	// readDir
+	fmt.Println("osReadDir")
+	util.PrintFiles(osReadDir(directory))
+
+	//fmt.Println("fsReadDir")
+	//printFiles(fsReadDir(directory))
+
+}
 
 func osReadDir(path string) []fs.DirEntry {
 

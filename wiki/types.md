@@ -42,3 +42,19 @@ Examples - NB named types omit equals symbol:
 
 	type dollars int	// new type that 'copies' int, but is entirely independant
 
+
+
+
+Conversion
+----------
+
+https://go.dev/ref/spec#Conversions
+
+
+
+
+### Casting
+https://stackoverflow.com/questions/19577423/how-to-cast-to-a-type-alias-in-go
+
+> There is no casting in go. There are type assertions and type conversions.
+
