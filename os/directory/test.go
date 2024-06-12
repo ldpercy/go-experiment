@@ -2,9 +2,17 @@
 
 package directory
 
+import (
+	"fmt"
+	"os"
+)
+
 func Test(directory string) {
-	TestRead(directory)
+	fmt.Println("Test: OS Directory")
+	//TestRead(directory)
 	TestWalk(directory)
+
+	fmt.Println(os.DirFS(directory))
 }
 
 /*
