@@ -1,6 +1,12 @@
 Golang
 ======
 
+https://go.dev/
+https://pkg.go.dev/std
+https://gobyexample.com/
+
+
+
 Basics
 ------
 
