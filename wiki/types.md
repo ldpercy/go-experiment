@@ -58,3 +58,14 @@ https://stackoverflow.com/questions/19577423/how-to-cast-to-a-type-alias-in-go
 
 > There is no casting in go. There are type assertions and type conversions.
 
+
+
+Option types
+------------
+
+https://stackoverflow.com/questions/9993178/is-there-a-nice-way-to-simulate-a-maybe-or-option-type-in-go
+
+
+> 	Maybe X = *X
+>	Nothing = nil
+>	Just x = &x

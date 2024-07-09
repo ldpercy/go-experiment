@@ -12,5 +12,7 @@ import (
 func main() {
 	fmt.Println("Experiment: Structs")
 	simple.Test()
-	composite.Test()
+	// composite.Test()
+	composite.TestPointers()
+
 }
