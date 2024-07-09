@@ -6,11 +6,13 @@ package main
 import (
 	"experiment/struct/composite"
 	"experiment/struct/simple"
-	"fmt"
+	"log"
 )
 
 func main() {
-	fmt.Println("Experiment: Structs")
+	log.SetFlags(log.Lshortfile)
+	log.Println("Experiment: Structs")
+
 	simple.Test()
 	// composite.Test()
 	composite.TestPointers()

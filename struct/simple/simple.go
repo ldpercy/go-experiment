@@ -1,7 +1,7 @@
 package simple
 
 import (
-	"fmt"
+	"log"
 )
 
 type simpleStruct struct {
@@ -10,9 +10,9 @@ type simpleStruct struct {
 }
 
 func Test() {
-	fmt.Println("Simple Structs")
+	log.Println("Simple Structs")
 
-	fmt.Println(makeStruct())
+	log.Println(makeStruct())
 }
 
 func makeStruct() simpleStruct {

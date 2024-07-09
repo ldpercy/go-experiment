@@ -4,7 +4,7 @@
 package composite
 
 import (
-	"fmt"
+	"log"
 	// "experiment/struct/main" // cannot do this - cyclic dependency
 	typeUtil "experiment/type/util"
 )
@@ -27,15 +27,15 @@ type person struct {
 
 /* Test */
 func Test() {
-	fmt.Println("Composite Structs")
-	fmt.Println(makePerson())
-	fmt.Println(makeAnotherPerson())
+	log.Println("Composite Structs")
+	log.Println(makePerson())
+	log.Println(makeAnotherPerson())
 
 	pa := personAlias{}
 	typeUtil.PrintType(pa)
 
 	mp := makeMegaPerson()
-	fmt.Println(mp)
+	log.Println(mp)
 	typeUtil.PrintType(mp)
 }
 
