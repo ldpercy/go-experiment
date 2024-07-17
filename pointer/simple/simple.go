@@ -1,14 +1,21 @@
 package simple
 
-import "fmt"
+import (
+	"log"
+)
 
 func Test() {
 
 	s := "a string"
 
-	fmt.Println(s)
+	log.Println(s)
 
-	sp := &s // address of s
-	fmt.Println(sp)
+	ampersand_s := &s // &s is the address of s
+	log.Println(ampersand_s)
 
+	// asterisk_s := *s  // error - cannot get the underlying value of an ordinary var
+
+	asterisk_ampersand_s := *ampersand_s // asterisk gets the value being pointed at the address
+
+	log.Println(asterisk_ampersand_s)
 }

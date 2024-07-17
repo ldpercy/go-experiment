@@ -59,33 +59,18 @@ Ranges are slices and can be appended to:
 
 
 
-Maps
-----
+Style
+-----
 
-https://www.youtube.com/watch?v=v3RodjH1i6c&list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM&index=12
+https://go.dev/wiki/CodeReviewComments#declaring-empty-slices
 
-key:value pairs
+When declaring an empty slice, prefer
 
-All keys must be same type
-All values must have same type
+	var t []string
 
-	mapName := map[keyType]valueType{
-		key1: value1,
-		key2: value2,
-		...
-	}
+over
 
-Reference an element:
+	t := []string{}
 
-	mapName[key]				// integer key
-	mapName["stringKey"]
+The former declares a nil slice value, while the latter is non-nil but zero-length.
 
-Looping:
-
-	for k, v := range mapName {
-		fmt.PrintLn(k, "-", v)
-	}
-
-Mutate:
-
-	mapName[key]	= newValue

@@ -1,14 +1,14 @@
 package util
 
 import (
-	"fmt"
+	"log"
 	"reflect"
 )
 
 //util
 
 func Print(name string, variable any) {
-	fmt.Printf("%v: %#v \n", name, variable)
+	log.Printf("%v: %#v \n", name, variable)
 }
 
 func Typeof(v interface{}) string {

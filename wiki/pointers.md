@@ -2,7 +2,21 @@ Pointers
 ========
 
 
-Need to get passing around pointers/references sorted out.
+Syntax
+------
+
+https://stackoverflow.com/questions/3552626/what-does-the-asterisk-do-in-go
+
+> \* attached to a type (*string) indicates a pointer to the type.
+>
+> \* attached to a variable in an assignment (*v = ...) indicates an indirect assignment. That is, change the value pointed at by the variable.
+>
+> \* attached to a variable or expression (*v) indicates a pointer dereference. That is, take the value the variable is pointing at.
+>
+> & attached to a variable or expression (&v) indicates a reference. That is, create a pointer to the value of the variable or to the field.
+
+
+I feel like the first one should have been an ampersand. Maybe it's a C thing.
 
 
 Pass by value types

@@ -1,6 +1,9 @@
 package structs
 
-import "experiment/pointer/util"
+import (
+	"experiment/pointer/util"
+	"fmt"
+)
 
 type person struct {
 	name string
@@ -67,4 +70,8 @@ func modifyP1(p person) {
 
 func modifyP2(p *person) {
 	p.name = "Graham"
+}
+
+func modifyString1(s string) string {
+	return fmt.Sprintf("%v %v", s, s)
 }

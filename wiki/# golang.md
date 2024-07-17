@@ -6,6 +6,13 @@ https://pkg.go.dev/std
 https://gobyexample.com/
 
 
+Style
+-----
+https://go.dev/doc/effective_go
+https://go.dev/wiki/CodeReviewComments
+https://google.github.io/styleguide/go/decisions
+
+
 
 Basics
 ------
@@ -49,16 +56,18 @@ https://www.youtube.com/watch?v=PAAkCSZUG1c
 
 https://www.youtube.com/watch?v=yE5Tpp2BSGw
 
-Done right
-	started with formal spec
-	multiple compilers
-	portability
-	compatibility guarantee
-	library
-	tools
-	gofmt
+Done right:
+
+*	started with formal spec
+*	multiple compilers
+*	portability
+*	compatibility guarantee
+*	library
+*	tools
+*	gofmt
 
 Concurrency
+
 	async await
 	coloured functions
 	https://en.wikipedia.org/wiki/Communicating_sequential_processes
@@ -67,6 +76,7 @@ Concurrency
 	https://www.youtube.com/watch?v=oV9rvDllKEg
 
 Interfaces
+
 	sort.Interface len less swap
 	empty writer reader
 	maps slices arrays channels
@@ -74,22 +84,27 @@ Interfaces
 	actually parametric polymorphism
 
 The compiler
+
 	done in c
 	llvm
 
 Project management
+
 	quality first
 	svn-perforce-hg-git
 
 Package management
+
 	splash talk
 	plain string for import stmt
 
 Documentation
+
 	even simple examples
 	go playground
 
 Q&A
+
 	telemetry opt-in
 	exceptions
 	no Go 2
