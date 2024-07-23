@@ -54,4 +54,7 @@ So if you need mutators I think you'd want pointer receivers.
 For constructors, and maybe simple getters, value receivers should be okay.
 Will try and revise as I go.
 
+See also:
+https://go.dev/wiki/CodeReviewComments#receiver-type
+
 */
