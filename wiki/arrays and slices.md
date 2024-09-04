@@ -2,13 +2,17 @@
 Arrays and Slices
 =================
 
+https://gobyexample.com/arrays
+https://gobyexample.com/slices
+
 https://www.youtube.com/watch?v=Arb-LjPg7FA
 
 
 Arrays are fixed length, slices are variable.
 0 based
 
-### Array
+Array
+-----
 
 Arrays are fixed length once declared.
 
@@ -23,7 +27,8 @@ Shorthand:
 	arrayName := [size]arrayType{item1, item2, ...}
 
 
-### Slice
+Slice
+-----
 
 Slices are variable length (use array type under the hood).
 

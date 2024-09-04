@@ -1,18 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"regexp"
+	"experiment/regexp/submatch"
+	"log"
 )
 
 func main() {
+	log.SetFlags(log.Lshortfile)
 
-	re := regexp.MustCompile(`(\s*)(\w*)\s*(:?)\s*(.*)`)
-
-	str := "		foo : bar"
-
-	result := re.FindStringSubmatch(str)
-
-	fmt.Printf("%#v ", result)
+	submatch.Test()
 
 }
