@@ -2,6 +2,7 @@ package file
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"reflect"
 )
@@ -30,4 +31,24 @@ func Test() {
 
 	fmt.Println(string(content))
 
+}
+
+func FileRead(filepath string) string {
+	// Open file
+	file, err := os.Open(filepath)
+	if err != nil {
+		log.Printf("Error opening file: %v \n", err)
+	}
+	defer file.Close()
+
+	log.Printf("File opened: %v \n", filepath)
+
+	// Read file
+	content, err := os.ReadFile(filepath)
+	if err != nil {
+		log.Printf("Error reading file: %v \n", err)
+	}
+	log.Printf("File read: %v \n", filepath)
+
+	return string(content)
 }

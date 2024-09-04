@@ -1,13 +1,15 @@
 package main
 
 import (
-	"experiment/regexp/submatch"
+	"experiment/regexp/newline"
+	//"experiment/regexp/submatch"
 	"log"
 )
 
 func main() {
 	log.SetFlags(log.Lshortfile)
 
-	submatch.Test()
+	// submatch.Test()
+	newline.Test()
 
 }
