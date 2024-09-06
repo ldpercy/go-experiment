@@ -1,0 +1,13 @@
+This is a document \n
+with \r
+	several \n\r
+different \r\n escape sequences
+\n embedded within
+it
+\n
+\r
+\r\n
+Just to \t see how it works
+
+
+

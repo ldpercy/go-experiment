@@ -58,3 +58,23 @@ func FindSubmatches(string string, regex regexp.Regexp) []submatch {
 
 	return result
 }
+
+func FindSubmatchesAll(string string, regex regexp.Regexp) []submatch {
+	result := []submatch{}
+
+	stringSubmatchIndex := regex.FindAllStringSubmatchIndex(string, -1)
+
+	for _, value := range stringSubmatchIndex {
+		for i := 0; i < len(value); i = i + 2 {
+			result = append(result,
+				submatch{
+					submatch: string[value[i]:value[i+1]],
+					start:    value[i],
+					end:      value[i+1],
+				},
+			)
+		}
+	}
+
+	return result
+}
