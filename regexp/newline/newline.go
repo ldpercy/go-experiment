@@ -6,7 +6,7 @@ package newline
 
 import (
 	osfile "experiment/os/file"
-	"experiment/regexp/submatch"
+	"experiment/regex/submatch"
 	"log"
 	"regexp"
 )

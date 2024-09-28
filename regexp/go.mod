@@ -1,4 +1,4 @@
-module experiment/regexp
+module experiment/regex
 
 go 1.22.1
 
