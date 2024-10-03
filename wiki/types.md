@@ -6,6 +6,8 @@ https://go.dev/ref/spec#Types
 https://go.dev/ref/spec#Properties_of_types_and_values
 
 
+	%T	a Go-syntax representation of the type of the value
+
 Basic Format
 ------------
 
@@ -17,18 +19,17 @@ This creates a brand new, independent, type based on the existing type.
 
 
 
-
-
-
-Aliasing
---------
+Type Aliasing
+-------------
 
 https://go.dev/ref/spec#Type_declarations
 
-Examples - NB aliasing requires 'equals' symbol:
+Aliasing requires the 'equals' symbol:
 
+```go
 	type number = int			// aliases an existing built-in type
 	type Oblong = Rectangle		// aliases a user-defined type
+```
 
 Aliased types are entirely interchangeable with their source types.
 
@@ -38,10 +39,13 @@ Named Types
 
 https://go.dev/ref/spec#Type_identity
 
-Examples - NB named types omit equals symbol:
+Named types omit the 'equals' symbol:
 
+```go
 	type dollars int	// new type that 'copies' int, but is entirely independant
+```
 
+Named types are *not* substituable.
 
 
 
@@ -65,7 +69,8 @@ Option types
 
 https://stackoverflow.com/questions/9993178/is-there-a-nice-way-to-simulate-a-maybe-or-option-type-in-go
 
-
-> 	Maybe X = *X
->	Nothing = nil
->	Just x = &x
+```go
+	Maybe X = *X
+	Nothing = nil
+	Just x = &x
+```
