@@ -15,14 +15,25 @@ New named types - not substitutable:
 I'm not sure yet whether either of those statement types can be made dynamic - I suspect not.
 
 
-Interfaces:
+Interfaces (30 Oct 2018):
 https://avilay.rocks/go-dynamic-types/
 
 */
 
 package dynamic
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
+
+func Test() {
+	var ap = AudioPlayer{Volume: 10}
+	var p Player = ap
+
+	log.Println("p:", p)
+	log.Printf("type: %T \n", p) // still reports p as being an AudioPlayer
+}
 
 type AudioPlayer struct {
 	Volume int
@@ -35,7 +46,3 @@ type Player interface {
 func (ap AudioPlayer) Play(content string) {
 	fmt.Printf("Playing audio %v at volume %d\n", content, ap.Volume)
 }
-
-var ap = AudioPlayer{Volume: 10}
-
-var p Player = ap

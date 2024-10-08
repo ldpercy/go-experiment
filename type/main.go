@@ -7,7 +7,8 @@ https://go.dev/ref/spec#Type_definitions
 package main
 
 import (
-	"experiment/type/alias"
+	_ "experiment/type/alias"
+	"experiment/type/dynamic"
 	_ "experiment/type/util"
 	"fmt"
 )
@@ -15,5 +16,6 @@ import (
 func main() {
 	fmt.Println("Experiment: Types")
 	// util.Test()
-	alias.Test()
+	// alias.Test()
+	dynamic.Test()
 }
