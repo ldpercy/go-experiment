@@ -1,27 +1,38 @@
 Golang
 ======
 
-https://go.dev/
-https://pkg.go.dev/std
-https://gobyexample.com/
-
-
-Style
------
-https://go.dev/doc/effective_go
-https://go.dev/wiki/CodeReviewComments
-https://google.github.io/styleguide/go/decisions
-
+* https://go.dev/
+* https://pkg.go.dev/std
+* https://gobyexample.com/
 
 
 Basics
 ------
 
 * Go is pass-by-value
-* Pass by value (non-pointer):			string int float boolean array struct
-* Pass by reference (pointer-wrapper):	slice map function
+* Pass by value (non-pointer):	string, int, float, boolean, array, struct
+* Pass by reference (pointer-wrapper):	slice, map, function
+* Pointer syntax is implicit for pointer-wrapper types
 * Arrays are fixed length, slices are variable length
 * Map keys and values must all be of the same type
+
+
+Style guides
+------------
+
+### Official
+* https://go.dev/doc/effective_go
+* https://go.dev/wiki/CodeReviewComments
+
+### Google
+* https://google.github.io/styleguide/go/
+* https://google.github.io/styleguide/go/decisions
+
+### Uber
+* https://github.com/uber-go/guide
+
+
+
 
 
 
@@ -147,6 +158,7 @@ Learning
 --------
 
 Go Tutorial (Golang) for Beginners
+
 https://www.youtube.com/watch?v=etSN4X_fCnM&list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM
 
 

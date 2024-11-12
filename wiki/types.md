@@ -74,3 +74,14 @@ https://stackoverflow.com/questions/9993178/is-there-a-nice-way-to-simulate-a-ma
 	Nothing = nil
 	Just x = &x
 ```
+
+
+
+Dynamic Types
+-------------
+
+https://stackoverflow.com/questions/55934210/creating-structs-programmatically-at-runtime-possible
+
+https://medium.com/@utter_babbage/breaking-the-type-system-in-golang-aka-dynamic-types-8b86c35d897b
+
+https://avilay.rocks/go-dynamic-types/

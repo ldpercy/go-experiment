@@ -13,7 +13,10 @@ Constant, can only be simple values that can be evaluated by the compiler.
 No constant maps, structs, arrays, slices
 
 
+Constants
+---------
 
+https://go.dev/blog/constants
 
 
 
@@ -30,3 +33,9 @@ Naming
 ------
 
 Variable names must begin with lower or upper case letters, or an underscore.
+
+### Leading (initial) underscores
+
+https://stackoverflow.com/questions/29891677/when-to-use-leading-underscore-in-variable-names-in-go
+
+https://github.com/uber-go/guide/blob/master/style.md#prefix-unexported-globals-with-_
