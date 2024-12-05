@@ -8,8 +8,8 @@ package main
 
 import (
 	_ "experiment/type/alias"
+	_ "experiment/type/check"
 	"experiment/type/dynamic"
-	_ "experiment/type/util"
 	"fmt"
 )
 
