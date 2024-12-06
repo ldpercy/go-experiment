@@ -1,52 +1,68 @@
 Types
 =====
 
+```go
+	type wholeNumber = int			// type alias
+	type myStruct struct			// named type
+	fmt.Sprintf("%T", variable)		// type of variable
+```
+
 https://go.dev/ref/spec#Types
 
 https://go.dev/ref/spec#Properties_of_types_and_values
 
 
-	%T	a Go-syntax representation of the type of the value
-
-Basic Format
+Type Aliases
 ------------
 
-```go
-	type newTypeName existingTypeConstructor
-```
+Aliases are synonyms and entirely interchangeable with their source types.
 
-This creates a brand new, independent, type based on the existing type.
-
-
-
-Type Aliasing
--------------
-
-https://go.dev/ref/spec#Type_declarations
-
-Aliasing requires the 'equals' symbol:
+Aliasing requires the `=` symbol:
 
 ```go
-	type number = int			// aliases an existing built-in type
+	type wholeNumber = int		// aliases an existing built-in type
 	type Oblong = Rectangle		// aliases a user-defined type
 ```
 
-Aliased types are entirely interchangeable with their source types.
+https://go.dev/ref/spec#Type_declarations
 
 
 Named Types
 -----------
 
-https://go.dev/ref/spec#Type_identity
+Named types are independent of their sources and *not* substitutable.
 
-Named types omit the 'equals' symbol:
+Named types omit the `=` symbol:
 
 ```go
 	type dollars int	// new type that 'copies' int, but is entirely independant
 ```
 
-Named types are *not* substituable.
 
+https://go.dev/ref/spec#Type_identity
+
+
+Type checking
+-------------
+
+String formatting:
+```go
+	fmt.Sprintf("%T", variable)
+```
+
+Reflection:
+```go
+	reflect.TypeOf(variable)
+```
+
+Reflect kind - returns underlying type of named types:
+```go
+	reflect.ValueOf(variable).Kind()
+```
+
+
+https://golangtutorial.dev/tips/find-type-of-an-object/
+https://golangtutorial.dev/tips/find-type-of-an-object/
 
 
 Conversion

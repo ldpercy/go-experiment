@@ -8,14 +8,15 @@ package main
 
 import (
 	_ "experiment/type/alias"
+	"experiment/type/check"
 	_ "experiment/type/check"
-	"experiment/type/dynamic"
-	"fmt"
+	"log"
 )
 
 func main() {
-	fmt.Println("Experiment: Types")
-	// util.Test()
+	log.SetFlags(log.Lshortfile)
+	log.Println("Experiment: Types")
+	check.Test()
 	// alias.Test()
-	dynamic.Test()
+	// dynamic.Test()
 }
