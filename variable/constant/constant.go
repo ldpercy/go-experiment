@@ -16,12 +16,28 @@ const b int = 2
 // const c int = 3298457389257423849047543509683450698 // overflow
 const c = 3298457389257423849047543509683450698 // works
 
-type name string // named type
+// You can construct strings as consts:
+const (
+	hello    = "hello"
+	myName   = "Alice"
+	greeting = hello + " " + myName
+)
+
+// What about regex?
+const (
+	prefix = `\(`
+	middle = `[A-Za-z]+`
+	suffix = `\)`
+	exp    = prefix + middle + suffix
+)
 
 func Test() {
 	log.Println("Constant Test")
 
 	log.Println(a, b)
+
+	log.Println(greeting)
+	log.Println(exp)
 
 	// log.Println(c) // overflows here though :(
 }
