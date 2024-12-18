@@ -80,8 +80,26 @@ https://stackoverflow.com/questions/19577423/how-to-cast-to-a-type-alias-in-go
 
 
 
-Option types
-------------
+
+Algebraic types
+---------------
+
+### Product type
+struct
+
+### Enum
+iota
+
+### Tagged union
+Nothing built in.
+Options:
+* union of fields, ie a struct of all, and an added `type` field
+* simulate with interfaces (add a dummy method)
+
+
+https://www.reddit.com/r/golang/comments/13hjevf/idiomatic_way_in_go_to_represent_a_tagged_union/
+
+### Option type
 
 https://stackoverflow.com/questions/9993178/is-there-a-nice-way-to-simulate-a-maybe-or-option-type-in-go
 
