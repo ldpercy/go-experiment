@@ -7,16 +7,16 @@ package main
 
 import (
 	_ "experiment/regex/newline"
+	"experiment/regex/submatch"
 	_ "experiment/regex/submatch"
-	"experiment/regex/zerowidth"
 	"log"
 )
 
 func main() {
 	log.SetFlags(log.Lshortfile)
 
-	// submatch.Test()
+	submatch.Test()
 	// newline.Test()
-	zerowidth.Test()
+	// zerowidth.Test()
 
 }
