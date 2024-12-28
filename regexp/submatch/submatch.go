@@ -6,9 +6,11 @@ import (
 )
 
 func Test() {
-	reString := `(^)(\t*)(\w*)(\s*)(:)(\s*)(.*)($)`
+	//reString := `(^)(\t*)(\w*)(\s*)(:)(\s*)(.*)($)`
+	reString := `^(\b\w+\b)\s*(:)\s*(\b[A-Z]\w*\b)?\s*(.*)$`
 	//str := "		foo : bar"
-	str := "name : Type value" // 17 characters
+	//str := "name : Type value" // 17 characters
+	str := "a:1"
 
 	re := regexp.MustCompile(reString)
 	testSubmatches(str, *re)
@@ -40,9 +42,9 @@ What I want is a function that returns an array of the submatches (only, not the
 */
 
 type Submatch struct {
-	Submatch string
-	Start    int
-	End      int
+	String string
+	Start  int
+	End    int
 }
 
 func FindSubmatches(string string, regex regexp.Regexp) []Submatch {
@@ -53,9 +55,9 @@ func FindSubmatches(string string, regex regexp.Regexp) []Submatch {
 	for i := 0; i < len(stringSubmatchIndex); i = i + 2 {
 		result = append(result,
 			Submatch{
-				Submatch: string[stringSubmatchIndex[i]:stringSubmatchIndex[i+1]],
-				Start:    stringSubmatchIndex[i],
-				End:      stringSubmatchIndex[i+1],
+				String: string[stringSubmatchIndex[i]:stringSubmatchIndex[i+1]],
+				Start:  stringSubmatchIndex[i],
+				End:    stringSubmatchIndex[i+1],
 			},
 		)
 	}
@@ -72,9 +74,9 @@ func FindSubmatchesAll(string string, regex regexp.Regexp) []Submatch {
 		for i := 0; i < len(value); i = i + 2 {
 			result = append(result,
 				Submatch{
-					Submatch: string[value[i]:value[i+1]],
-					Start:    value[i],
-					End:      value[i+1],
+					String: string[value[i]:value[i+1]],
+					Start:  value[i],
+					End:    value[i+1],
 				},
 			)
 		}
